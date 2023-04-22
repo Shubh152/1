@@ -2,8 +2,8 @@
 
 
 ## 0-1.
- to login in ssh server at <hostname> and <port> as <user>
-
+ to login in ssh server at *hostname* and *port* as *user*
+ 
 `ssh <user>@<hostname> -p <port>`
 
 ## 1-2.
@@ -22,12 +22,11 @@ to use <space>, use escape sequence \<space>
 `ls -a`
 
 ## 4-5.  
-check file type of all files , ascii files will be human readable .
-
-`Cd inhere`
-
-`File inhere/\*`
-
+check file type of all files , ascii files will be human readable .  
+ ```
+  Cd inhere
+  File inhere/\*
+```
 File dir/\* prints  all file types in dir directory
 
 ## 5-6. 
@@ -73,16 +72,15 @@ use translate -t giving range as array set taking input from data.txt file , in 
 `tr -t [A-Za-z] [N-ZA-Mn-za-m] < data.txt`
 
 ## 12-13.
- first, retrieve the compressed file from hexdump file,
-
+ first, retrieve the compressed file from hexdump file,  
 then decompress repeatedly using bzip2, gzip, tar
 
-for reverse hexdump, ~xxd -r data\_copy.txt > data0.txt~
+for reverse hexdump,  
+`xxd -r data\_copy.txt > data0.txt`
 
 data0.txt is a compressed file of gzip, bzip2, tar which is checked by file command ,then rename file using mv to add appropriate suffix like gz, bz2
 
-`gzip -d data0.txt.gz`
-
+`gzip -d data0.txt.gz`  
 `bzip2 -d data0.txt.bz2`
 
 ## 13-14. 
